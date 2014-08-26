@@ -1,0 +1,245 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template App | minecraft is the best </title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/log-camp-styles.css" />
+    <script src="js/modernizr.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
+  <body>
+    <header id="Header" ng-controller="HeaderController">
+      <div class="fixed sticky">
+        <nav id="Navigation" class="top-bar" data-topbar ng-controller="NavController">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="index.html">{{ data.title }}</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a>
+              </li>
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a>
+              </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li><a href="#SectionOne">{{ data.sectionOne}}</a></li>
+              <li><a href="#SectionTwo">{{ data.sectionTwo }}</a></li>
+              <li><a href="#SectionThree">{{ data.sectionThree }}</a></li>
+              <li><a href="#SectionFour">{{ data.sectionFour }}</a></li>
+              <li><a href="#SectionFive">{{ data.sectionFive }}</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <h2 class="heading-white">{{ data.headingOne }}</h2>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <br />
+          <br />
+          <ul class="button-group">
+            <li><a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a></li>
+            <li><a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a></li>
+          </ul>
+        </div>
+        <div class="small-12 large-6 columns">
+        <img class="th radius" src="http://www.minecraftbuildinginc.com/wp-content/uploads/2013/11/minecraft-cow-animated-gif-blow-up.gif" />
+        </div>
+      </div>
+    </header>
+    <section id="SectionOne">
+      <div class="row">
+        <h2 class="text-center">Minecraft</h2>
+        <div class="small-12 large-6 columns">
+          <h2>Minecraft is Awesome</h2>
+          <img class="th radius" src="http://cdn2.scratch.mit.edu/get_image/gallery/308027_170x100.png?v=1387303829.25" />
+          <p>gangnam style</p>
+          <p>Minecraft gangnam style</p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h2 class="text-left">Minecraft pictures</h2>
+          <ul class="example-orbit" data-orbit>
+            <li>
+              <img src="http://www.picgifs.com/games-gifs/games-gifs/minecraft/picgifs-minecraft-5895241.gif" alt="slide 1" />
+              <div class="orbit-caption">
+                Caption One.
+              </div>
+            </li>
+            <li class="active">
+              <img src="http://cdn2.scratch.mit.edu/get_image/gallery/223195_170x100.png?v=1372204773.18" />
+              <div class="orbit-caption">
+                Caption Two.
+              </div>
+            </li>
+            <li>
+              <img src="http://www.picgifs.com/games-gifs/games-gifs/minecraft/picgifs-minecraft-174401.gif" alt="slide 3" />
+              <div class="orbit-caption">
+                Caption Three.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="SectionTwo" style="background-color: #ff0000;">
+      <div class="row">
+        <h2 class="text-center heading-white">minecraft songs</h2>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">1. i need a daimond sword</h3>
+         <iframe width="480" height="270" src="http://www.youtube.com/embed/V1w7tdltcMg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">2. how do i craft it again </h3>
+<iframe width="480" height="270" src="http://www.youtube.com/embed/DD6kWO3XnN0" frameborder="0" allowfullscreen></iframe> allowfullscreen></iframe>></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="SectionThree">
+      <div class="row">
+        <h2 class="text-center">Minecraft images</h2>
+        <div class="small-12 medium-4 large-4 columns">
+            <img class="th radius" src="http://files.gamebanana.com/img/ico/sprays/5090a953e1fba.gif" />
+          <p>creaper</p>
+          <p>creaper spinning his head</p>
+          <p><a href="#" class="button radius">Radius Button</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://cdn2.scratch.mit.edu/get_image/gallery/348379_170x100.png"/>
+
+          <p>pikachu</p>
+          <p>pikachu running on grass</p>
+          <p><a href="#" class="button radius">Radius Button</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://i.imgur.com/oBmx7MQ.gif" />
+          <p>skellton </p>
+          <p>skellton shacking his boty</p>
+          <p><a href="#" class="button radius">Radius Button</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFour">
+      <div class="row">
+        <h2 class="text-center">cool stuff</h2>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://www.picgifs.com/games-gifs/games-gifs/minecraft/picgifs-minecraft-30140.gif" />
+          <p>chickin</p>
+          <p>chichin running</p>
+          <p><a href="#" class="button radius">Radius Button</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://www.gfx-bin.com/images/Arktijaa_walk.gif" />
+          <p>some guy </p>
+          <p>some guy walking </p>
+          <p><a href="#" class="button radius">Radius Button</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://i.imgur.com/a0DJVzk.gif" />
+          <p>daimond sword</p>
+          <p>flaming daimond sword </p>
+          <p><a href="#" class="button radius">Radius Button</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://cdn.sashaminecraft.com/wp-content/uploads/2014/04/enderdragon_and_crystal_by_lockrikard-d5rcurf.gif" />
+          <p>enderdragon_and_crystal_by_lockrikard</p>
+          <p>enderdragon_and_crystal_by_lockrikard</p>
+          <p><a href="#" class="button radius">Radius Button</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFive" ng-controller="ProfileController">
+      <div class="row">
+        <h2 class="text-center">kevin He </h2>
+        <div class="small-12 large-4 columns">
+          <img class="th radius" src="http://cdn2.scratch.mit.edu/get_image/gallery/359306_170x100.png?v=1393342651.76" />
+        </div>
+        <div class="small-12 large-8 columns">
+          <h3 class="black-header"> Kevin He </h3>
+          <p> My name is kevin he  </p>
+          <p> i like minecraft </p>
+          <p> minecraft is my favroite game </p>
+          <p> I like icecream </p>
+        </div>
+      </div>
+    </section>
+    <footer id="Footer" ng-controller="FooterController">
+      <div class="row">
+        <div class="small-12 large-4 columns">
+          <a href="index.html" target="_blank">
+          <img class="th radius" src="img/log-camp-footer-logo.png" />
+        </a>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3><a href="index.html">{{ nav.title }}</a></h3>
+          <ul>
+            <li><a class="runner-a" href="#SectionOne">{{ nav.sectionOne }}</a></li>
+            <li><a class="runner-a" href="#SectionTwo">{{ nav.sectionTwo }}</a></li>
+            <li><a class="runner-a" href="#SectionThree">{{ nav.sectionThree }} </a></li>
+            <li><a class="runner-a" href="#SectionFour">{{ nav.sectionFour }}</a></li>
+            <li><a class="runner-a" href="#SectionFive">{{ nav.sectionFive }}</a></li>
+          </ul>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3>{{ data.headingTwo }}</h3>
+          <ul>
+            <li><a href="mailto:info@logcamp.org">
+              <i class="fi-mail"></i>&nbsp;{{ data.email }}</a>
+            </li>
+            <li><a href="tel:5035026125">
+              <i class="fi-telephone"></i>&nbsp;{{ data.phone }}</a>
+            </li>
+            <li><a href="http://www.logcamp.org" target="_blank">
+                <i class="fi-web"></i>&nbsp;{{ data.web }}</a>
+            </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-facebook">&nbsp;</i>{{ data.facebook }}</a>
+              </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-twitter"></i>&nbsp;{{ data.twitter }}</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>&copy;&nbsp;{{ data.copyright }}<br/>{{ data.credit}}</p>
+        </div>
+      </div>
+    </footer>
+      <!-- This is the modal section -->
+<div id="ActionOne" class="reveal-modal" data-reveal>
+  <h2>Awesome. I have it.</h2>
+  <p class="lead">Your couch.  It is mine.</p>
+  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="ActionTwo" class="reveal-modal" data-reveal>
+  <h2>Awesome. I have it.</h2>
+  <p class="lead">Your couch.  It is mine.</p>
+  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  </body>
+</html>

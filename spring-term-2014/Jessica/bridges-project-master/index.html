@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template App | Website Description</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/log-camp-styles.css" />
+    <script src="js/modernizr.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
+  <body>
+    <header id="Header" ng-controller="HeaderController">
+      <div class="fixed sticky">
+        <nav id="Navigation" class="top-bar" data-topbar ng-controller="NavController">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="index.html">{{ data.title }}</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a>
+              </li>
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a>
+              </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li><a href="#SectionOne">{{ data.sectionOne}}</a></li>
+              <li><a href="#SectionTwo">{{ data.sectionTwo }}</a></li>
+              <li><a href="#SectionThree">{{ data.sectionThree }}</a></li>
+              <li><a href="#SectionFour">{{ data.sectionFour }}</a></li>
+              <li><a href="#SectionFive">{{ data.sectionFive }}</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <h2 class="heading-white">{{ data.headingOne }}</h2>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <br />
+          <br />
+          <ul class="button-group">
+            <li><a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a></li>
+            <li><a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a></li>
+          </ul>
+        </div>
+        <div class="small-12 large-6 columns">
+        <img class="th radius" src="{{ data.headerImage }}" />
+        </div>
+      </div>
+    </header>
+    <section id="SectionOne">
+      <div class="row">
+        <h2 class="text-center">Galaxy s5</h2>
+        <div class="small-12 large-6 columns">
+          <h2>Pics</h2>
+          <img class="th radius" src="http://cdn3.tnwcdn.com/wp-content/blogs.dir/1/files/2014/02/MWC-samsung-galaxy-s5.jpg" />
+          <p>It has incredible detail and vibrant color on a 5.1" screen.</p>
+          <p>The Galaxy s5 is designed to be dustproof and water resistant.</p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h2 class="text-left">More pics</h2>
+          <ul class="example-orbit" data-orbit>
+            <li>
+              <img src="http://s.tmocache.com/content/dam/tmo/en-p/cell-phones/samsung-galaxy-s-5/shimmery-white/stills/carousel-samsung-galaxy-s-5-shimmery-white-380x380-2.jpg" alt="slide 1" />
+              <div class="orbit-caption">
+                Shimmering White Galaxy s5.
+              </div>
+            </li>
+            <li class="active">
+              <img src="http://images.fonearena.com/blog/wp-content/uploads/2014/04/Samsung-Galaxy-S5-Unboxing-1.jpg" />
+              <div class="orbit-caption">
+                Flight mode is on.
+              </div>
+            </li>
+            <li>
+              <img src="http://2.bp.blogspot.com/-id7QcyJ98JQ/UymYHEypHuI/AAAAAAAAJzk/H3zlTgAWIQw/s1600/Samsung-Galaxy-S5.jpg" />
+              <div class="orbit-caption">
+                Brilliant brown Galaxy s5.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="SectionTwo">
+      <div class="row">
+        <h2 class="text-center heading-white">Laptops</h2>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">1. Samsung 7&9 ultrabook</h3>
+          <iframe width="480" height="270" src="http://www.youtube.com/embed/lVq1ttPVhzw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">2. Chromebook</h3>
+<iframe width="480" height="270" src="http://www.youtube.com/embed/Iquf2gPm8dE" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="SectionThree">
+      <div class="row">
+        <h2 class="text-center">Home Appliances</h2>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://images.lowes.com/product/converted/036725/036725560444lg.jpg" />
+          <p>The microwaves have 3 different colors you can choose from. They are stainless steel, black, and white.</p>
+          <p>The smallest size is 1.6 cu.ft and the largest size is 2.1 cu.ft.</p>
+          <p><a href="http://www.samsung.com/us/appliances/microwaves" target="_blank" class="button radius">Microwaves</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://www.frenchdoorrefrigeratorreviews.net/wp-content/uploads/2013/08/Samsung-RF4287-review.jpg" />
+          <p>The French door refridgerator is really cool. You can get the 3 door one or the 4 door one.</p>
+          <p>It also features a bottom right door that can change into a fridge or freezer and saves you trips to the market.</p>
+          <p><a href="http://www.samsung.com/us/appliances/refrigerators" target="_blank"class="button radius">Refridgerators</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_197174801?wid=800&hei=800&op_sharpen=1" />
+          <p>The Samsung 9100 front load washing machine is the largest capacity washer. You can wash 4 laundry baskets in a single load.</p>
+          <p>By easily pressing the SuperSpeed button, you can wash a full load in only 30 minutes.</p>
+          <p><a href="http://www.samsung.com/us/appliances/washers-dryers" target="_blank" class="button radius">Washing Machine</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFour">
+      <div class="row">
+        <h2 class="text-center">Samsung TV's</h2>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://www.samsung.com/us/system/consumer/topic/00/00/01/81/tsc00000181/481x336UHD_S9.png" />
+          <p>The Samsung UHD tv displays your sports and movies with great detail.</p>
+          <p>The most expensive one out right now is $39,999.99</p>
+          <p><a href="http://www.samsung.com/us/video/uhd-tv" target="_blank" class="button radius">UHD tv</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://images.samsung.com/is/image/samsung/ae_UA40F5000ARXZN_506_Front_black?$Download-Source$" />
+          <p>The LED tv has bright color and pretty contrast.</p>
+          <p>It makes your whites whiter and your blacks deeper.</p>
+          <p><a href="http://www.samsung.com/us/video/led-tv" target="_blank" class="button radius">LED tv</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://www.samsung.com/us/images/features/2013/s9tv/482_hero.jpg" />
+          <p>The OLED tv has a rich color thats better than LED tv.</p>
+          <p>It's so clear and essentially blur-free.</p>
+          <p><a href="http://www.samsung.com/us/video/oled-tv" target="_blank" class="button radius">OLED tv</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://www.samsung.com/us/images/features/tv/462x347_plasma_angle-hero.jpg" />
+          <p>The Plasma TV has rich color and detail.</p>
+          <p>It is also bright and has detailed contrast.</p>
+          <p><a href="http://www.samsung.com/us/video/oled-tv" class="button radius">Plasma tv</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFive" ng-controller="ProfileController">
+      <div class="row">
+        <h2 class="text-center">About me</h2>
+        <div class="small-12 large-4 columns">
+          <img class="th radius" src="http://www.industryleadersmagazine.com/wp-content/uploads/2013/04/Samsung-Electronics-Co..jpg" />
+        </div>
+        <div class="small-12 large-8 columns">
+          <h3 class="black-header">{{ data.headingOne }}</h3>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <p>{{ data.paragraphThree }}</p>
+          <p>{{ data.paragraphFour }}</p>
+        </div>
+      </div>
+    </section>
+    <footer id="Footer" ng-controller="FooterController">
+      <div class="row">
+        <div class="small-12 large-4 columns">
+          <a href="index.html" target="_blank">
+          <img class="th radius" src="img/log-camp-footer-logo.png" />
+        </a>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3><a href="index.html">{{ nav.title }}</a></h3>
+          <ul>
+            <li><a class="runner-a" href="#SectionOne">{{ nav.sectionOne }}</a></li>
+            <li><a class="runner-a" href="#SectionTwo">{{ nav.sectionTwo }}</a></li>
+            <li><a class="runner-a" href="#SectionThree">{{ nav.sectionThree }} </a></li>
+            <li><a class="runner-a" href="#SectionFour">{{ nav.sectionFour }}</a></li>
+            <li><a class="runner-a" href="#SectionFive">{{ nav.sectionFive }}</a></li>
+          </ul>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3>{{ data.headingTwo }}</h3>
+          <ul>
+            <li><a href="mailto:info@logcamp.org">
+              <i class="fi-mail"></i>&nbsp;{{ data.email }}</a>
+            </li>
+            <li><a href="tel:5035026125">
+              <i class="fi-telephone"></i>&nbsp;{{ data.phone }}</a>
+            </li>
+            <li><a href="http://www.logcamp.org" target="_blank">
+                <i class="fi-web"></i>&nbsp;{{ data.web }}</a>
+            </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-facebook">&nbsp;</i>{{ data.facebook }}</a>
+              </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-twitter"></i>&nbsp;{{ data.twitter }}</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>&copy;&nbsp;{{ data.copyright }}<br/>{{ data.credit}}</p>
+        </div>
+      </div>
+    </footer>
+      <!-- This is the modal section -->
+<div id="ActionOne" class="reveal-modal" data-reveal>
+  <h2>Samsung's designed in South Korea by Byung-Chull Lee.</h2>
+  <p class="lead">They make so many products that can fill your house until it's perfect.</p>
+  <p>Cool story.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="ActionTwo" class="reveal-modal" data-reveal>
+  <h2>Everyone loves their Galaxy tablets.</h2>
+  <p class="lead">Their newest phone is the Galaxy s5.</p>
+  <p>Cool story.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  </body>
+</html>

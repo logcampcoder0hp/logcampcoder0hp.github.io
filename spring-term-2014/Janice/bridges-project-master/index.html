@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template App | Website Description</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/log-camp-styles.css" />
+    <script src="js/modernizr.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
+  <body>
+    <header id="Header" ng-controller="HeaderController">
+      <div class="fixed sticky">
+        <nav id="Navigation" class="top-bar" data-topbar ng-controller="NavController">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="index.html">{{ data.title }}</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a>
+              </li>
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a>
+              </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li><a href="#SectionOne">{{ data.sectionOne}}</a></li>
+              <li><a href="#SectionTwo">{{ data.sectionTwo }}</a></li>
+              <li><a href="#SectionThree">{{ data.sectionThree }}</a></li>
+              <li><a href="#SectionFour">{{ data.sectionFour }}</a></li>
+              <li><a href="#SectionFive">{{ data.sectionFive }}</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <h2 class="heading-white">{{ data.headingOne }}</h2>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <br />
+          <br />
+          <ul class="button-group">
+            <li><a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a></li>
+            <li><a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a></li>
+          </ul>
+        </div>
+        <div class="small-12 large-6 columns">
+        <img class="th radius" src="{{ data.headerImage }}" />
+        </div>
+      </div>
+    </header>
+    <section id="SectionOne">
+      <div class="row">
+        <h2 class="text-center">iPods</h2>
+        <div class="small-12 large-6 columns">
+          <h2>iPod</h2>
+          <img class="th radius" src="http://www.euronics.lv/UserFiles/Products/Images/54618_5thgen3blue.jpg" />
+          <p>The Newest iPod that is out is the iPod 5. iPod 5 can either have 16 GB or 64GB or 32 GB. There is iPod 1, iPod 2, iPod 3, iPod 4 ,and iPod 5. Right now only the iPod 4 and 5 sells.</p>
+          <p>The iPod is very cool. It can download many apps depending on how much GB there is. </p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h2 class="text-left">More iPod</h2>
+          <ul class="example-orbit" data-orbit>
+            <li>
+              <img src=" http://media-cache-ec0.pinimg.com/236x/31/11/a7/3111a7e35b4faea2506194ad91579b39.jpg  " alt="slide 1" />
+              <div class="orbit-caption">
+                The iPod case has a hello kitty face.
+              </div>
+            </li>
+            <li class="active">
+              <img src="http://humster3d.com/wp-content/uploads/2012/10/iPod_touch_5th-generation_600_lq_0002.jpg" alt="slide 2" />
+              <div class="orbit-caption">
+                This is the iPod 5.
+              </div>
+            </li>
+            <li>
+              <img src="http://ak1.ostkcdn.com/images/products/7923462/7923462/MYBAT-Clear-Hot-Pink-Case-for-Apple-iPod-Touch-Generation-5-P15300218.jpg" alt="slide 3" />
+              <div class="orbit-caption">
+                The iPod case color is pink,it can be any color.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="SectionTwo">
+      <div class="row">
+        <h2 class="text-center heading-white">Videos</h2>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">1. About iPod 5.</h3>
+         <iframe width="480" height="270" src="https://www.youtube.com/embed/0k7-Ay2fqvA" frameborder="0" allowfullscreen></iframe>
+          </div>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">2. iPhone 5s vs Samsung Galaxy S4.</h3>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/o2GPYpaB44c" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="SectionThree">
+      <div class="row">
+        <h2 class="text-center">iPod,iPhone,iPad air</h2>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://galleryplus.ebayimg.com/ws/web/331049590166_1_0_1/1000x1000.jpg" />
+          <p>The iPod 5 is the newest iPod so far.</p>
+          <p>The iPod 5 is very cool and have lots of details in it.</p>
+          <p><a href="http://store.apple.com/us/ipod" target="_blank"class="button radius">iPod</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://previewcf.turbosquid.com/Preview/2012/10/10__20_37_48/aiph5w_01.jpg5c15d80f-6be5-469e-9a32-de6762b9c0d2Large.jpg" />
+          <p>The iPhone 5 is also very cool.</p>
+          <p>It is white and could download many apps..</p>
+          <p><a href="http://store.apple.com/us/iphone" target=_blank" class="button radius">iPhone</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://store.storeimages.cdn-apple.com/3908/as-images.apple.com/is/image/AppleInc/ipad-air-gallery1-2013?wid=900&hei=600&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1381431718104" />
+          <p>The iPad Air is very cool.It has alot of GB..</p>
+          <p>The iPad Air weighs about 1 lbs.It is the lightest iPad there is.</p>
+          <p><a href="http://store.apple.com/us/buy-ipad/ipad-air" target="_blank" class="button radius">iPad Air</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFour">
+      <div class="row">
+        <h2 class="text-center">iMac,iPad,earbuds,iPad mini</h2>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://gadjetsmania.com/data_images/reviews/imac/imac-03.jpg" />
+          <p>The iMac is a computer, it is very thin.It is very fast depending how fast your wifi is.</p>
+          <p>The Mac can come in iMac, MacBookAir, MacBook Pro, Mac mini, and Mac Pro.All of the Mac is awesome!! </p>
+          <p><a href="http://store.apple.com/us/buy-mac/imac" target="_blank" class="button radius">iMac</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://cdn.ndtv.com/tech/images/ipad-mini-display-retina.jpg" />
+          <p>Right now the newest iPad is iPad 4.It has 128GB.It also has Retina Display.</p>
+          <p>The iPad 4 is very cool.It can download tons of apps becuase it has alto of GB.</p>
+          <p><a href="http://store.apple.com/us/buy-ipad/ipad-retina" target="_blank" class="button radius">iPad Retina Display</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://imgs.inkfrog.com/pix/designerciti1/iphone5_headset.jpg" />
+          <p>The apple earbuds has a remote and mic in it.It tells which earbuds for which ear.On the top and bottom of the remote it's the volume button. </p>
+          <p>Between the volume button there's a pause button.It is amazing.</p>
+          <p><a href="http://store.apple.com/us/accessories/apple-accessories#!" target="_blank"class="button radius">Earbuds</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://www1.pcmag.com/media/images/341076-apple-ipad-mini-with-retina-display.jpg" />
+          <p>The iPad mini only has the iPad mini and the iPad mini Retina display.</p>
+          <p>The diffence between the iPad mini's is that the retina display is more clearer than the regular iPad mini..</p>
+          <p><a href="http://store.apple.com/us/buy-ipad/ipad-mini-retina" target="_blank"class="button radius">iPad Mini</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFive" ng-controller="ProfileController">
+      <div class="row">
+        <h2 class="text-center">About Me</h2>
+        <div class="small-12 large-4 columns">
+          <img class="th radius" src="http://assets.ilounge.com/images/reviews_apple/iphone5/1.jpg" />
+        </div>
+        <div class="small-12 large-8 columns">
+          <h3 class="black-header">{{ data.headingOne }}</h3>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <p>{{ data.paragraphThree }}</p>
+          <p>{{ data.paragraphFour }}</p>
+        </div>
+      </div>
+    </section>
+    <footer id="Footer" ng-controller="FooterController">
+      <div class="row">
+        <div class="small-12 large-4 columns">
+          <a href="index.html" target="_blank">
+          <img class="th radius" src="img/log-camp-footer-logo.png" />
+        </a>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3><a href="index.html">{{ nav.title }}</a></h3>
+          <ul>
+            <li><a class="runner-a" href="#SectionOne">{{ nav.sectionOne }}</a></li>
+            <li><a class="runner-a" href="#SectionTwo">{{ nav.sectionTwo }}</a></li>
+            <li><a class="runner-a" href="#SectionThree">{{ nav.sectionThree }} </a></li>
+            <li><a class="runner-a" href="#SectionFour">{{ nav.sectionFour }}</a></li>
+            <li><a class="runner-a" href="#SectionFive">{{ nav.sectionFive }}</a></li>
+          </ul>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3>{{ data.headingTwo }}</h3>
+          <ul>
+            <li><a href="mailto:info@logcamp.org">
+              <i class="fi-mail"></i>&nbsp;{{ data.email }}</a>
+            </li>
+            <li><a href="tel:5035026125">
+              <i class="fi-telephone"></i>&nbsp;{{ data.phone }}</a>
+            </li>
+            <li><a href="http://www.logcamp.org" target="_blank">
+                <i class="fi-web"></i>&nbsp;{{ data.web }}</a>
+            </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-facebook">&nbsp;</i>{{ data.facebook }}</a>
+              </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-twitter"></i>&nbsp;{{ data.twitter }}</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>&copy;&nbsp;{{ data.copyright }}<br/>{{ data.credit}}</p>
+        </div>
+      </div>
+    </footer>
+      <!-- This is the modal section -->
+<div id="ActionOne" class="reveal-modal" data-reveal>
+  <h2>Awesome Apple Products!!</h2>
+  <p class="lead">Apple Products are cool.</p>
+  <p>Every apple product has GB.The apple products has cases to go with it.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="ActionTwo" class="reveal-modal" data-reveal>
+  <h2>Logo</h2>
+  <p class="lead">Apple Logo</p>
+  <p>Every apple product has the apple logo.The logo is like an apple.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  </body>
+</html>

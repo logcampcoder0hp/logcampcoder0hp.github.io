@@ -1,0 +1,243 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>icecream and 1D</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/log-camp-styles.css" />
+    <script src="js/modernizr.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
+  <body>
+    <header id="Header" ng-controller="HeaderController">
+      <div class="fixed sticky">
+        <nav id="Navigation" class="top-bar" data-topbar ng-controller="NavController">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="index.html">{{ data.title }}</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a>
+              </li>
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a>
+              </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li><a href="#SectionOne">{{ data.sectionOne}}</a></li>
+              <li><a href="#SectionTwo">{{ data.sectionTwo }}</a></li>
+              <li><a href="#SectionThree">{{ data.sectionThree }}</a></li>
+              <li><a href="#SectionFour">{{ data.sectionFour }}</a></li>
+              <li><a href="#SectionFive">{{ data.sectionFive }}</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <h2 class="heading-white">{{ data.headingOne }}</h2>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <br />
+          <br />
+          <ul class="button-group">
+            <li><a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a></li>
+            <li><a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a></li>
+          </ul>
+        </div>
+        <div class="small-12 large-6 columns">
+        <img class="th radius" src="{{ data.headerImage }}" />
+        </div>
+      </div>
+    </header>
+    <section id="SectionOne">
+      <div class="row">
+        <h2 class="text-center">some people are really nice</h2>
+        <div class="small-12 large-6 columns">
+          <h2>icecream</h2>
+          <img class="th radius" src="http://sd.keepcalm-o-matic.co.uk/i/say-nice-things-and-smile.png" />
+          <p>i love me.</p>
+          <p>i love 1D they are the best.</p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h2 class="text-left">icecream and 1D is Awesome</h2>
+          <ul class="example-orbit" data-orbit>
+            <li>
+              <img src="http://t3.gstatic.com/images?q=tbn:ANd9GcRWD1qICEcAlBnret4dTAdKZf4MxfFg1WdGrdfwGls3K3vbXlFI:www.blenderbabes.com/wp-content/uploads/ice_cream.girl" />
+              <div class="orbit-caption">
+                i am nice.
+              </div>
+            </li>
+            <li class="active">
+              <img src="http://www.garderoba.si/image/cache/data/MAJICE_GARDEROBA.si/I/ilove-1d-KVADRAT-600x600.png" />
+              <div class="orbit-caption">
+                 i love my mom.
+              </div>
+            </li>
+            <li>
+              <img src="http://sd.keepcalm-o-matic.co.uk/i/keep-calm-because-i-love-my-family-3.png" />
+              <div class="orbit-caption">
+                i love my dad.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="SectionTwo">
+      <div class="row">
+        <h2 class="text-center heading-white"> 1D is Awesome</h2>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">1. lilliard is awsome</h3>
+          <iframe width="480" height="270" src="https://www.youtube.com/embed/MW8ODmNPx34" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">2.i love the movie shark tail</h3>
+<iframe width="300" height="225" src="https://www.youtube.com/embed/AJvsk7NsZe4" frameborder="0" allowfullscreen></iframe>
+
+    </section>
+    <section id="SectionThree">
+      <div class="row">
+        <h2 class="text-center">i love icecream</h2>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://content.sportslogos.net/logos/6/239/full/5767.gif" />
+          <p>i love my family.</p>
+          <p>i love blazers.</p>
+          <p><a href="#" class="button radius">i love icecream</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="https://img1.etsystatic.com/012/0/6514127/il_340x270.439368071_bn2r.jpg" />
+          <p>i love icecream and 1D.</p>
+          <p>i love my family so much.</p>
+          <p><a href="#" class="button radius">save your life</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://images6.fanpop.com/image/photos/36000000/One-Direction-image-one-direction-36081157-1024-768.jpg" />
+          <p>love my family so so so so much.</p>
+          <p>i love basketball.</p>
+          <p><a href="#" class="button radius">i like people</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFour">
+      <div class="row">
+        <h2 class="text-center">my life</h2>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://img1.funscrape.com/en/life/20.gif" />
+          <p>my life is really crazy.</p>
+          <p>one thing about my life is that i have a wonderful family.</p>
+          <p><a href="#" class="button radius">love your family</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://1.bp.blogspot.com/-JBedYvDGaec/Un7sU_3Z_wI/AAAAAAAAP8Q/1VHDZdqnrHQ/s1600/1380042_554287058008951_471494505_n.jpg" />
+          <p>my teacher is  nice sometimes.</p>
+          <p>i love all my friends a lot.</p>
+          <p><a href="#" class="button radius">im Awesome</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://1.bp.blogspot.com/-UB4OKZZxTbs/UK3bA5gOfZI/AAAAAAAAA28/7CWU__Eszpg/s1600/LoveSchool.jpg" />
+          <p>i love to play basketball.</p>
+          <p>i like  new things.</p>
+          <p><a href="#" class="button radius">i love meeeee</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://t1.gstatic.com/images?q=tbn:ANd9GcRkt3ZjrXfRcvlVAnG_e90b6V9M3XhNjGDbN_OW9tEdAdCoHE7G:friendsfavz.files.wordpress.com/2013/01/new-thing-tuesday-button2.jpg%3Fw%3D5100%26h%3D3300" />
+          <p>i love waching videos.</p>
+          <p>i love my school.</p>
+          <p><a href="#" class="button radius">icecream</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFive" ng-controller="ProfileController">
+      <div class="row">
+        <h2 class="text-center">love 1 Derection</h2>
+        <div class="small-12 large-4 columns">
+          <img class="th radius" src="http://www.georgemahood.com/LeJog/Images/NicePeopleCardFront.jpg" />
+        </div>
+        <div class="small-12 large-8 columns">
+          <h3 class="black-header">{{ data.headingOne }}</h3>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <p>{{ data.paragraphThree }}</p>
+          <p>{{ data.paragraphFour }}</p>
+        </div>
+      </div>
+    </section>
+    <footer id="Footer" ng-controller="FooterController">
+      <div class="row">
+        <div class="small-12 large-4 columns">
+          <a href="index.html" target="_blank">
+          <img class="th radius" src="img/log-camp-footer-logo.png" />
+        </a>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3><a href="index.html">{{ nav.title }}</a></h3>
+          <ul>
+            <li><a class="runner-a" href="#SectionOne">{{ nav.sectionOne }}</a></li>
+            <li><a class="runner-a" href="#SectionTwo">{{ nav.sectionTwo }}</a></li>
+            <li><a class="runner-a" href="#SectionThree">{{ nav.sectionThree }} </a></li>
+            <li><a class="runner-a" href="#SectionFour">{{ nav.sectionFour }}</a></li>
+            <li><a class="runner-a" href="#SectionFive">{{ nav.sectionFive }}</a></li>
+          </ul>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3>{{ data.headingTwo }}</h3>
+          <ul>
+            <li><a href="mailto:info@logcamp.org">
+              <i class="fi-mail"></i>&nbsp;{{ data.email }}</a>
+            </li>
+            <li><a href="tel:5035026125">
+              <i class="fi-telephone"></i>&nbsp;{{ data.phone }}</a>
+            </li>
+            <li><a href="http://www.logcamp.org" target="_blank">
+                <i class="fi-web"></i>&nbsp;{{ data.web }}</a>
+            </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-facebook">&nbsp;</i>{{ data.facebook }}</a>
+              </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-twitter"></i>&nbsp;{{ data.twitter }}</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>&copy;&nbsp;{{ data.copyright }}<br/>{{ data.credit}}</p>
+        </div>
+      </div>
+    </footer>
+      <!-- This is the modal section -->
+<div id="ActionOne" class="reveal-modal" data-reveal>
+  <h2>i love nile si much he is from 1D.</h2>
+  <p class="lead">my class is loud a lot.</p>
+  <p> i am so Awesome and my friends are to</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="ActionTwo" class="reveal-modal" data-reveal>
+  <h2>i love icecream so much</h2>
+  <p class="lead">i like 1D and some of my friends do to.</p>
+  <p>i look Awesome and cute</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  </body>
+</html>

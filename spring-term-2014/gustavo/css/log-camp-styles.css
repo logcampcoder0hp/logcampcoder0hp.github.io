@@ -1,0 +1,123 @@
+/* Google custom fonts go here */
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(http://openfontlibrary.org/face/osp-din);
+
+body {
+margin: 0px;
+padding: 0px;
+}
+
+/* H1, H2, H3, H4, H5, H6, styles go here */
+h1, h2, h3, h4, h5, h6 {
+font-family: 'OSP-DIN', sans-serif;
+text-transform: uppercase;
+color: #333333;
+}
+
+/* Paragraph styles go here */
+p {
+font-family: 'Nunito', Helvetica, Arial, sans-serif;
+font-size: 18px;
+margin: 10px 0px 0px 0px;
+}
+
+/* a href styles go here */
+a {
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
+/* Header styles go here */
+header {
+background-image: url(http://lorempixel.com/output/city-q-g-1920-480-7.jpg);
+margin-top: 0px;
+padding: 20px 0px 20px 0px;
+}
+#Header h1 {
+color: #ffffff;
+}
+#Header p {
+color: #ffffff;
+}
+
+/* Footer styles go here*/
+footer {
+background-color: #333333;
+padding: 40px 0px 0px 0px;
+}
+footer h1,h2,h3,h4,h5,h6 {
+color: #ffffff;
+}
+footer p {
+color: #ffffff;
+}
+footer ul {
+list-style-type: none;
+margin:0px;
+padding: 0px;
+}
+footer ul>li {
+list-style-type: none;
+}
+footer ul>li>a {
+color: #ffffff;
+margin: 0px;
+padding: 0px;
+}
+footer ul>li>a:hover {
+color: #ffffff;
+text-decoration: underline;
+}
+footer a {
+color: #ffffff;
+}
+footer a:hover {
+color: #ffffff;
+text-decoration: underline;
+}
+/* End of footer styles */
+
+/* Section One - Section Five styles go here */
+#SectionOne {
+padding: 20px 0px 20px 0px;
+}
+#SectionOne h2 {
+color: #333333;
+}
+#SectionTwo {
+background-color: #000000;
+padding: 20px 0px 80px 0px;
+}
+#SectionThree {
+background-color: #ffffff;
+padding: 20px 0px 20px 0px;
+}
+#SectionFour {
+background-image: url(http://lorempixel.com/output/city-q-g-1920-480-7.jpg);
+padding: 0px 0px 0px 0px;
+}
+#SectionFive {
+background-image: url(../img/tree-bark.png);
+padding: 20px 0px 20px 0px;
+}
+/* End of Section One - Section Five styles */
+
+.top-nav {
+display: inline;
+list-style-type: none;
+}
+.top-nav li {
+display: inline;
+margin: 5px 5px 0 0;
+}
+
+/* Extra  styles */
+.profile h1,h2,h3,h4,h5,h6 {
+color: #333333;
+}
+
+.heading-white {
+color: #ffffff;
+}
