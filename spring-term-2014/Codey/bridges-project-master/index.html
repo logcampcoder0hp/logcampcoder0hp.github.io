@@ -1,0 +1,246 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlimited Ninja Website</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/log-camp-styles.css" />
+    <script src="js/modernizr.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
+  <body>
+    <header id="Header" ng-controller="HeaderController">
+      <div class="fixed sticky">
+        <nav id="Navigation" class="top-bar" data-topbar ng-controller="NavController">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="index.html">{{ data.title }}</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a>
+              </li>
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a>
+              </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li><a href="#SectionOne">{{ data.sectionOne}}</a></li>
+              <li><a href="#SectionTwo">{{ data.sectionTwo }}</a></li>
+              <li><a href="#SectionThree">{{ data.sectionThree }}</a></li>
+              <li><a href="#SectionFour">{{ data.sectionFour }}</a></li>
+              <li><a href="#SectionFive">{{ data.sectionFive }}</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <h2 class="heading-white">{{ data.headingOne }}</h2>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <br />
+          <br />
+          <ul class="button-group">
+            <li><a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a></li>
+            <li><a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a></li>
+          </ul>
+        </div>
+        <div class="small-12 large-6 columns">
+        <img class="th radius" src="{{ data.headerImage }}" />
+        </div>
+      </div>
+    </header>
+    <section id="SectionOne">
+      <div class="row">
+        <h2 class="text-center">Beginning of game</h2>
+        <div class="small-12 large-6 columns">
+          <h2>Beginning Profile</h2>
+          <img class="th radius" src="http://img2.wikia.nocookie.net/__cb20140109113517/ultimate-naruto/images/4/4c/Nr.png" />
+          <p>This is the basic beginning ninja.</p>
+          <p>You can upgrade your ninja be fortifying equipment, boost summoning beast, etc.</p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h2 class="text-left">Ways To Boost Fighting Power</h2>
+          <ul class="example-orbit" data-orbit>
+            <li>
+              <img src="http://jeu-gratuit-flash.fr/wp-content/uploads/ultimate-naruto-unlimited-ninja-3.png" alt="slide 1" />
+              <div class="orbit-caption">
+                Missions
+              </div>
+            </li>
+            <li class="active">
+              <img src="http://img03.bgstatic-com.de/images/games/games/801/main/470x320/_unlimitedninja_hauptbild.jpg" alt="slide 2" />
+              <div class="orbit-caption">
+                Some ninjas are better then others.
+              </div>
+            </li>
+            <li>
+              <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/1545744_10202581995569596_671056297_n.jpg" alt="slide 3" />
+              <div class="orbit-caption">
+                Pet Upgraded
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="SectionTwo">
+      <div class="row">
+        <h2 class="text-center heading-white">Videos</h2>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white"><iframe width="480" height="270" src="https://www.youtube.com/embed/tqxrR_8kY7E?list=UUI9XJZ1mnuZa8Id-FWtxQ2w" frameborder="0" allowfullscreen></iframe></h3>
+
+        </div>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white"><iframe width="480" height="270" src="https://www.youtube.com/embed/aw7uqXwwU6M?list=UUI9XJZ1mnuZa8Id-FWtxQ2w" frameborder="0" allowfullscreen></iframe></h3>
+
+        </div>
+      </div>
+    </section>
+    <section id="SectionThree">
+      <div class="row">
+        <h2 class="text-center">Pictures</h2>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://img3.wikia.nocookie.net/__cb20131209153815/ultimate-naruto/images/a/a6/Conq.png" />
+          <p>Konoha Conquest</p>
+            <p>Ninjas coming from another end from you. Goal is to get to the other side without dying. Death cooldown in 1 minute.</p>
+
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://img3.wikia.nocookie.net/__cb20131103172637/ultimate-naruto/images/3/37/Refine.png" />
+          <p>Refining beast</p>
+          <p>Level up your beast to get better fighting. Unlocked at level 72.</p>
+
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://img3.wikia.nocookie.net/__cb20131001162432/ultimate-naruto/images/b/b7/Trasure_map_select_map.png" />
+          <p>Treasure Hunt</p>
+          <p>Used to get materials. Unlocked at level 32.</p>
+
+        </div>
+      </div>
+    </section>
+    <section id="SectionFour">
+      <div class="row">
+        <h2 class="text-center">Basic Buttons in Game</h2>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://images.bbgsite.com/news/2013/11/08/ultimate_naruto_02.jpg" />
+          <p>Realm</p>
+          <p>Used to get S. Weapons, used to boost many ablities. Unlocked after level 30 main battle.</p>
+
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://ninja.playwebgame.com/wp-content/uploads/2013/12/Daily-Task-Bar-Complete.jpg" />
+          <p>Daily task</p>
+          <p>Used to get a varity of rewards and the top prize is 150 points.</p>
+
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://i1335.photobucket.com/albums/w666/RiceNkpoP/UN/Guide/DailySign-In_zps33cfacb0.jpg" />
+          <p>Check In</p>
+          <p>Daily checking in will get you 5 points. Trade in points to get materials.</p>
+
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius"src="http://imagizer.imageshack.us/a/img703/1892/0fib.png" />
+          <p>Guild</p>
+            <p>Place where you donate silver/gold to your guild to increase HP, etc.</p>
+
+        </div>
+      </div>
+    </section>
+    <section id="SectionFive" ng-controller="ProfileController">
+      <div class="row">
+        <h2 class="text-center">About Me</h2>
+        <div class="small-12 large-4 columns">
+          <img class="th radius" src="http://tg.yeepgame.com/upload/2014/01/09/138925743145.jpg" />
+        </div>
+        <div class="small-12 large-8 columns">
+          <h3 class="black-header">{{ data.headingOne }}</h3>
+          <p>My name is Codey.</p>
+          <p>I am at Harrison Park.</p>
+          <p>I have taken Log Camp 3 times.</p>
+          <p>I learned how to make a Mobile App.</p>
+
+        </div>
+      </div>
+    </section>
+    <footer id="Footer" ng-controller="FooterController">
+      <div class="row">
+        <div class="small-12 large-4 columns">
+          <a href="index.html" target="_blank">
+          <img class="th radius" src="img/log-camp-footer-logo.png" />
+        </a>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3><a href="index.html">{{ nav.title }}</a></h3>
+          <ul>
+            <li><a class="runner-a" href="#SectionOne">{{ nav.sectionOne }}</a></li>
+            <li><a class="runner-a" href="#SectionTwo">{{ nav.sectionTwo }}</a></li>
+            <li><a class="runner-a" href="#SectionThree">{{ nav.sectionThree }} </a></li>
+            <li><a class="runner-a" href="#SectionFour">{{ nav.sectionFour }}</a></li>
+            <li><a class="runner-a" href="#SectionFive">{{ nav.sectionFive }}</a></li>
+          </ul>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3>{{ data.headingTwo }}</h3>
+          <ul>
+            <li><a href="mailto:info@logcamp.org">
+              <i class="fi-mail"></i>&nbsp;{{ data.email }}</a>
+            </li>
+            <li><a href="tel:5035026125">
+              <i class="fi-telephone"></i>&nbsp;{{ data.phone }}</a>
+            </li>
+            <li><a href="http://www.logcamp.org" target="_blank">
+                <i class="fi-web"></i>&nbsp;{{ data.web }}</a>
+            </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-facebook">&nbsp;</i>{{ data.facebook }}</a>
+              </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-twitter"></i>&nbsp;{{ data.twitter }}</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>&copy;&nbsp;{{ data.copyright }}<br/>{{ data.credit}}</p>
+        </div>
+      </div>
+    </footer>
+      <!-- This is the modal section -->
+<div id="ActionOne" class="reveal-modal" data-reveal>
+  <h2>This is the game</h2>
+  <p class="lead"></p>
+  <p>Go try it out! Link below</p>
+  <p>//un.games.la/ or http://ninja.playwebgame.com/home</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="ActionTwo" class="reveal-modal" data-reveal>
+  <h2>Unlimited Ninja Games</h2>
+  <p class="lead">Go try it out! Link below</p>
+  <p>//un.games.la/ or http://ninja.playwebgame.com/home</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  </body>
+</html>

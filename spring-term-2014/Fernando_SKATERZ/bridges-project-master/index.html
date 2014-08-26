@@ -1,0 +1,247 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKATERZ</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/log-camp-styles.css" />
+    <script src="js/modernizr.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
+  <body>
+    <header id="Header" ng-controller="HeaderController">
+      <div class="fixed sticky">
+        <nav id="Navigation" class="top-bar" data-topbar ng-controller="NavController">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="index.html">{{ data.title }}</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a>
+              </li>
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a>
+              </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li><a href="#SectionOne">{{ data.sectionOne}}</a></li>
+              <li><a href="#SectionTwo">{{ data.sectionTwo }}</a></li>
+              <li><a href="#SectionThree">{{ data.sectionThree }}</a></li>
+              <li><a href="#SectionFour">{{ data.sectionFour }}</a></li>
+              <li><a href="#SectionFive">{{ data.sectionFive }}</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <h1 id="#Header">{{ data.headingOne }}</h1>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <br />
+          <br />
+          <ul class="button-group">
+            <li><a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a></li>
+            <li><a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a></li>
+          </ul>
+        </div>
+        <div class="small-12 large-6 columns">
+        <img class="th radius" src="{{ data.headerImage }}" />
+        </div>
+      </div>
+    </header>
+    <section id="SectionOne">
+      <div class="row">
+        <h2 class="text-center">skaterz</h2>
+        <div class="small-12 large-6 columns">
+          <h2>fingerboards</h2>
+          <img class="th radius" src="http://birdhouseskateboards.com/2011tour/wp-content/themes/cleancorp/images/techdeck-logo.png" />
+          <p>techdecks are fun they are for people how dont have the time or the board to skate but techdeck changes it all .</p>
+          <p>you are able to do tricks people only think of.</p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h2 class="text-left">decks</h2>
+          <ul class="example-orbit" data-orbit>
+            <li>
+              <img src="http://image.skatedeluxe.de/images/product_images/original_images/53468_0.jpg" alt="slide 1" />
+              <div class="orbit-caption">
+                zoo york
+              </div>
+            </li>
+            <li class="active">
+              <img src="http://specialtysports-blog.com/wp-content/uploads/2011/10/alien_workshop_rob_dyrdek.jpg" />
+              <div class="orbit-caption">
+                alien workshop
+              </div>
+            </li>
+            <li>
+              <img src="http://skateboarding.1pages.com/wp-content/uploads/2013/12/dgk-skateboards-classic-decks----ifive-distribution-ank6bqiu.jpg" alt="slide 3" />
+              <div class="orbit-caption">
+                DGK
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="SectionTwo">
+      <div class="row">
+        <h2 class="text-center heading-white">skate vidz</h2>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white"></h3>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/nPuEU16P3zg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white"></h3>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/elojrNqYNtY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="SectionThree">
+      <div class="row">
+        <h2 class="text-center">artists to listen to while you skate </h2>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://simplysouthernme.files.wordpress.com/2012/02/lil_jon_yeah.jpg" />
+          <p>my favorite songs by lil'jon</p>
+          <p>turn down for what,
+            drink,
+            snap yo fingers,
+            act a fool
+             </p>
+          <p><a href="http://www.mtv.com/artists/lil-jon/" class="button radius">lil'jon</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://thumbs.hh.ulximg.com/public/img/avatar/500_1392662160_drake_trophies_produced_by_hit_boy_46.jpg" />
+          <p>my favorite songs by drake</p>
+          <p>hold in we,re going home,
+              worst behavior,
+            take care,</p>
+          <p><a href="http://www.mtv.com/artists/drake/" class="button radius">drake</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <img class="th radius" src="http://cdn.singersroom.com/upload/2013/07/Mac-Miller-Ready-To-Be-Named-Amongst-The-Big-Boys.jpg" />
+          <p>my favorite songs by mac miller</p>
+          <p>donald trump,knock knock,best day ever </p>
+          <p><a href="http://www.mtv.com/artists/mac-miller/" class="button radius">mac miller</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFour">
+      <div class="row">
+        <h2 class="text-center">tech deck</h2>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://skateparkoftampa.com/spot/productimages/colors/1_25919.jpg" />
+          <p>this is the only tech deck I have ever recieved from a friend</p>
+            <p><h1>Ryan</h1></p>
+          <p><a href="http://skateparkoftampa.com/skater/1841/Lucas_Puig" class="button radius">lucas puig </a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://i.tfcdn.com/img2/U6KG610ALcZLDkAwEABQsXWXjkbU5zLNUKroJ5kKekO3YuGtXn49WbEZRRKdkjNas9_ZEmOgHoAqhhaTd3gSG72F4atL-2Qs6okA5wP-ct5yaDpRguAgZd2wNegX/fvUG-v8A.B" />
+          <p>I have this tech deck myself looks cool and works great</p>
+          <p>I grind on anything</p>
+          <p><a href="http://us.elementbrand.com/" class="button radius">Element</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+
+
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+
+
+
+
+        </div>
+      </div>
+    </section>
+    <section id="SectionFive" ng-controller="ProfileController">
+      <div class="row">
+        <h2 class="text-center">fernando</h2>
+        <div class="small-12 large-4 columns">
+          <img class="th radius" src="http://static.comicvine.com/uploads/scale_small/1/10812/2363684-phoenixdone.jpg" />
+        </div>
+        <div class="small-12 large-8 columns">
+          <h3 class="black-header">hi im fernando</h3>
+          <p>these are some of my favorite things</p>
+          <p>music,art,videos,video games and more</p>
+
+        </div>
+      </div>
+    </section>
+    <footer id="Footer" ng-controller="FooterController">
+      <div class="row">
+        <div class="small-12 large-4 columns">
+          <a href="index.html" target="_blank">
+          <img class="th radius" src="img/log-camp-footer-logo.png" />
+        </a>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3><a href="index.html">{{ nav.title }}</a></h3>
+          <ul>
+            <li><a class="runner-a" href="#SectionOne">{{ nav.sectionOne }}</a></li>
+            <li><a class="runner-a" href="#SectionTwo">{{ nav.sectionTwo }}</a></li>
+            <li><a class="runner-a" href="#SectionThree">{{ nav.sectionThree }} </a></li>
+            <li><a class="runner-a" href="#SectionFour">{{ nav.sectionFour }}</a></li>
+            <li><a class="runner-a" href="#SectionFive">{{ nav.sectionFive }}</a></li>
+          </ul>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3>{{ data.headingTwo }}</h3>
+          <ul>
+            <li><a href="mailto:info@logcamp.org">
+              <i class="fi-mail"></i>&nbsp;{{ data.email }}</a>
+            </li>
+            <li><a href="tel:5035026125">
+              <i class="fi-telephone"></i>&nbsp;{{ data.phone }}</a>
+            </li>
+            <li><a href="http://www.logcamp.org" target="_blank">
+                <i class="fi-web"></i>&nbsp;{{ data.web }}</a>
+            </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-facebook">&nbsp;</i>{{ data.facebook }}</a>
+              </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-twitter"></i>&nbsp;{{ data.twitter }}</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>&copy;&nbsp;{{ data.copyright }}<br/>{{ data.credit}}</p>
+        </div>
+      </div>
+    </footer>
+      <!-- This is the modal section -->
+<div id="ActionOne" class="reveal-modal" data-reveal>
+  <h2>Awesome. I have it.</h2>
+  <p class="lead">Your couch.  It is mine.</p>
+  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="ActionTwo" class="reveal-modal" data-reveal>
+  <h2>Awesome. I have it.</h2>
+  <p class="lead">Your couch.  It is mine.</p>
+  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  </body>
+</html>

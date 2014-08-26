@@ -1,0 +1,238 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Everything About Nike</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/log-camp-styles.css" />
+    <script src="js/modernizr.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
+  <body>
+    <header id="Header" ng-controller="HeaderController">
+      <div class="fixed sticky">
+        <nav id="Navigation" class="top-bar" data-topbar ng-controller="NavController">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="index.html">{{ data.title }}</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a>
+              </li>
+              <li class="has-form">
+            <a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a>
+              </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li><a href="#SectionOne">{{ data.sectionOne}}</a></li>
+              <li><a href="#SectionTwo">{{ data.sectionTwo }}</a></li>
+              <li><a href="#SectionThree">{{ data.sectionThree }}</a></li>
+              <li><a href="#SectionFour">{{ data.sectionFour }}</a></li>
+              <li><a href="#SectionFive">{{ data.sectionFive }}</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <h1 class="#Header">{{ data.headingOne }}</h1>
+          <p>{{ data.paragraphOne }}</p>
+          <p>{{ data.paragraphTwo }}</p>
+          <br />
+          <br />
+          <ul class="button-group">
+            <li><a href="#" class="button radius" data-reveal-id="ActionOne">{{ data.actionOne }}</a></li>
+            <li><a href="#" class="button radius" data-reveal-id="ActionTwo">{{ data.actionTwo }}</a></li>
+          </ul>
+        </div>
+        <div class="small-12 large-6 columns">
+        <img class="th radius" src="{{ data.headerImage }}" />
+        </div>
+      </div>
+    </header>
+    <section id="SectionOne">
+      <div class="row">
+        <h2 class="text-center">Just Do It Section</h2>
+        <div class="small-12 large-6 columns">
+          <h2>Just Do It Image</h2>
+          <img src="http://cs316123.vk.me/v316123235/8bc5/TL6PwEDIdoQ.jpg" />
+            <p>Just keep clam and just do it.</p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h2 class="text-left">Image Gallery</h2>
+          <ul class="example-orbit" data-orbit>
+            <li>
+              <img src="http://www.liudiscountsports.com/images/nike-basketball-shoes/Nike%20LEBRON%20X%20PS%20MVP%20Nike%20Men's%20Basketball%20Shoes%20-%20Sky%20Blue%20and%20White.jpg" alt="slide 1" />
+              <div class="orbit-caption">
+                This is a Nike basketball shoe. You could wear the basketball shoe when you are playing basketball.
+              </div>
+            </li>
+            <li class="active">
+              <img src="http://www.big5sportinggoods.com/photos/product/giant/4782420S171950/basketballs/elite-competition-basketball.jpg" alt="slide 2" />
+              <div class="orbit-caption">
+                This is a Nike basketball. A basketball is played on a basketball court, a gym, and at the street with a basketball hoop.
+              </div>
+            </li>
+            <li>
+              <img src="http://images.nike.com/is/image/DotCom/THN_PS/Nike-Ace-Pullover-Mens-Hoodie-545973_010_A.jpg?fmt=jpg&qty=85&wid=620&hei=620&bgc=F5F5F5" alt="slide 3" />
+              <div class="orbit-caption">
+                This is a Nike hoodie. Most people wear it during the Winter and Spring.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="SectionTwo">
+      <div class="row">
+        <h2 class="text-center heading-white">Video Section</h2>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">NIKE LEBRON 11 ELITE "HERO" + ON FEET (SCOOP208) Video</h3>
+          <iframe width="475" height="315" src="https://www.youtube.com/embed/npYlB8UTPf8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="small-12 large-6 columns">
+          <h3 class="heading-white">2014 Nike Basketball Camp Promo Video</h3>
+          <iframe width="475" height="315" src="https://www.youtube.com/embed/R3muJvFFYO0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="SectionThree">
+      <div class="row">
+        <h2 class="text-center">Music Section</h2>
+        <div class="small-12 medium-4 large-4 columns">
+          <iframe width="300" height="225" src="https://www.youtube.com/embed/2MJj2A1Kx20" frameborder="0" allowfullscreen></iframe>
+          <p>This is Happy by Pharrell Williams</p>
+            <p><a href="http://pharrellwilliams.com/" class="button radius">Link Here</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <iframe width="300" height="225" src="https://www.youtube.com/embed/nYgH9wCXzi8" frameborder="0" allowfullscreen></iframe>
+          <p>This is All Of Me by John Legend</p>
+          <p><a href="http://www.johnlegend.com/us/news_front" class="button radius">Link Here</a></p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+          <iframe width="300" height="169" src="http://www.youtube.com/embed/lvbRwgadw80" frameborder="0" allowfullscreen></iframe>
+          <p>This is The Name Game by American Horror Story</p>
+          <p><a href="http://www.fxnetworks.com/ahs" class="button radius">Link Here</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFour">
+      <div class="row">
+        <h2 class="text-center">Image Section</h2>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://ecx.images-amazon.com/images/I/4147pLfN18L._SL500_.jpg" />
+          <p>This is a Nike Slipper.</p>
+          <p><a href="http://store.nike.com/us/en_us/pd/benassi-just-do-it-sandal/pid-653518/pgid-582464" class="button radius">Buy Me</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://www.edgarsactive.co.za/wp-content/uploads/2013/10/nike_boys_trackpants.png" />
+          <p>This is a Nike boy trackpants.</p>
+          <p><a href="http://store.nike.com/us/en_us/pd/hbr-track-pants/pid-721849/pgid-721851" class="button radius">Click Here To See Me</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://www.cheapjames11.com/pic/more/Women-Nike-Free-Run-3-Sky-Blue-Orange-Running-Shoes---1-2.jpg" />
+          <p>This is a women Nike free run three sky blue orange running shoes.</p>
+          <p><a href="http://store.nike.com/us/en_us/product/free-id/?piid=36325&pbid=668137945#?pbid=668137945" class="button radius">Shop Here</a></p>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <img class="th radius" src="http://ecx.images-amazon.com/images/I/41OJ5fkZBxL._SX342_.jpg" />
+          <p>This is a Nike hat.</p>
+          <p><a href="http://store.nike.com/us/en_us/pd/splatter-true-adjustable-hat/pid-843748" class="button radius">Hat Of The Future</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="SectionFive" ng-controller="ProfileController">
+      <div class="row">
+        <h2 class="text-center">All About Me</h2>
+        <div class="small-12 large-4 columnsS">
+          <img class="th radius" src="http://assets20.pokemon.com/static2/_ui/img/chrome/external_link_bumper.png" />
+        </div>
+        <div class="small-12 large-8 columns">
+          <h3 class="black-header">{{ data.headingOne }}</h3>
+          <p>My name is Brian Zhou.</p>
+          <p>I am in fifth grade.</p>
+          <p>I am in Mrs.Kempster's class.</p>
+            <p>I am at Harrison Park School.</p>
+          <p>I have taken Log Camp twice.</p>
+          <p>I am learning how to bulid a website and a moblie app.</p>
+        </div>
+      </div>
+    </section>
+    <footer id="Footer" ng-controller="FooterController">
+      <div class="row">
+        <div class="small-12 large-4 columns">
+          <a href="index.html" target="_blank">
+          <img class="th radius" src="img/log-camp-footer-logo.png" />
+        </a>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3><a href="index.html">{{ nav.title }}</a></h3>
+          <ul>
+            <li><a class="runner-a" href="#SectionOne">{{ nav.sectionOne }}</a></li>
+            <li><a class="runner-a" href="#SectionTwo">{{ nav.sectionTwo }}</a></li>
+            <li><a class="runner-a" href="#SectionThree">{{ nav.sectionThree }} </a></li>
+            <li><a class="runner-a" href="#SectionFour">{{ nav.sectionFour }}</a></li>
+            <li><a class="runner-a" href="#SectionFive">{{ nav.sectionFive }}</a></li>
+          </ul>
+        </div>
+        <div class="small-6 large-4 columns">
+          <h3>{{ data.headingTwo }}</h3>
+          <ul>
+            <li><a href="mailto:info@logcamp.org">
+              <i class="fi-mail"></i>&nbsp;{{ data.email }}</a>
+            </li>
+            <li><a href="tel:5035026125">
+              <i class="fi-telephone"></i>&nbsp;{{ data.phone }}</a>
+            </li>
+            <li><a href="http://www.logcamp.org" target="_blank">
+                <i class="fi-web"></i>&nbsp;{{ data.web }}</a>
+            </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-facebook">&nbsp;</i>{{ data.facebook }}</a>
+              </li>
+            <li class="runner-icon">
+                <a href="#"><i class="fi-social-twitter"></i>&nbsp;{{ data.twitter }}</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>&copy;&nbsp;{{ data.copyright }}<br/>{{ data.credit}}</p>
+        </div>
+      </div>
+    </footer>
+      <!-- This is the modal section -->
+<div id="ActionOne" class="reveal-modal" data-reveal>
+    <h2>Go and try out http://www.nike.com/us/en_us/</p>
+    <p class="lead">This link is a Nike website.</p>
+    <p>Also it is where you can buy Nike items online.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="ActionTwo" class="reveal-modal" data-reveal>
+    <h2>Nike items are for boys and girls.</p>
+    <p class="lead">Nike is very popular.</p>
+    <p>Please tell your friends to visit my Nike Website. </p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  </body>
+</html>
